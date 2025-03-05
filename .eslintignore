@@ -1,0 +1,16 @@
+# Build output
+.next/
+out/
+
+# Node modules
+node_modules/
+
+# Public assets
+public/
+
+# Next.js config
+next.config.ts
+next.config.js
+
+# TypeScript declaration files
+*.d.ts 
