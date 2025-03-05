@@ -51,8 +51,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/icon.png" />
-        <link rel="apple-touch-icon" href="/apple-icon.png" />
+        <link rel="icon" type="image/svg+xml" href="/mail-icon.svg" />
+        <link rel="apple-touch-icon" href="/mail-icon-large.svg" />
         <Script id="fix-styles" strategy="beforeInteractive">
           {`
             (function() {
