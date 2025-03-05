@@ -170,6 +170,11 @@ div:has(> img) {
   background: transparent !important;
 }
 
+/* Add scroll margin to sections with IDs for better anchor link positioning */
+section[id] {
+  scroll-margin-top: 120px;
+}
+
 /* Instruction box styling */
 .instruction-box {
   background-color: #f8f9fa !important;

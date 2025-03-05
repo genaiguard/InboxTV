@@ -92,7 +92,7 @@ export default function Home() {
                       <Link href="https://chromewebstore.google.com/detail/inboxtransactionviewer/mailfnnagpmjbhpajaccjnhecaccceak?hl=en&authuser=0">Add to Chrome</Link>
                     </Button>
                     <Button size="lg" variant="outline" asChild>
-                      <Link href="#instructions">Learn More</Link>
+                      <Link href="#welcome">Learn More</Link>
                     </Button>
                   </div>
                   <p className="text-xs text-muted-foreground">
@@ -115,7 +115,7 @@ export default function Home() {
           </section>
 
           {/* Welcome Section */}
-          <section className="py-12 md:py-16 bg-background w-full">
+          <section id="welcome" className="py-12 md:py-16 bg-background w-full">
             <div className="container px-4 md:px-6 text-center max-w-6xl mx-auto">
               <h2 className="text-3xl font-bold tracking-tighter mb-4">Welcome to Inbox Transaction Viewer</h2>
               <p className="text-muted-foreground md:text-lg max-w-3xl mx-auto">
