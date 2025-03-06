@@ -53,6 +53,15 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/svg+xml" href="/mail-icon.svg" />
         <link rel="apple-touch-icon" href="/mail-icon-large.svg" />
+        <Script id="microsoft-clarity" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "m9cvuprzdq");
+          `}
+        </Script>
         <Script id="fix-styles" strategy="beforeInteractive">
           {`
             (function() {
@@ -77,6 +86,8 @@ export default function RootLayout({
                   padding: 0;
                   color: #111;
                   background-color: #fff;
+                  font-size: 1.05rem;
+                  line-height: 1.6;
                 }
                 
                 .transparent-container {
@@ -103,9 +114,9 @@ export default function RootLayout({
                 
                 .container {
                   width: 100%;
-                  max-width: 1200px;
+                  max-width: 1400px;
                   margin: 0 auto;
-                  padding: 0 1rem;
+                  padding: 0 2rem;
                 }
                 
                 header {
