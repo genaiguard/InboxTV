@@ -62,6 +62,15 @@ export default function RootLayout({
             })(window, document, "clarity", "script", "m9cvuprzdq");
           `}
         </Script>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-8CDC4BNWDF" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8CDC4BNWDF');
+          `}
+        </Script>
         <Script id="fix-styles" strategy="beforeInteractive">
           {`
             (function() {
