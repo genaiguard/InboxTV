@@ -29,8 +29,8 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between max-w-6xl mx-auto px-4">
+      <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div className="container flex h-16 items-center justify-between max-w-7xl mx-auto px-4 md:px-6">
           <div className="flex items-center gap-2 font-semibold">
             <Mail className="h-5 w-5 text-primary" />
             <span>Inbox Transaction Viewer</span>
@@ -66,9 +66,9 @@ export default function BlogPage() {
         </div>
       </header>
 
-      <main className="flex-1">
+      <main className="flex-1 py-12 md:py-16">
         <section id="blog-posts" className="py-12 md:py-16 lg:py-20 bg-gray-50 w-full scroll-mt-20">
-          <div className="container max-w-6xl mx-auto px-4 md:px-6">
+          <div className="container max-w-7xl mx-auto px-4 md:px-6">
             <div className="text-center mb-16">
               <h1 className="text-4xl font-bold tracking-tight mb-4">Inbox Transaction Viewer Blog</h1>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -375,62 +375,63 @@ export default function BlogPage() {
       </main>
 
       <footer className="border-t py-12 md:py-16 bg-gray-100 w-full">
-        <div className="container max-w-6xl mx-auto px-4 md:px-6">
-          <div className="grid gap-8 md:grid-cols-4">
+        <div className="container max-w-7xl mx-auto px-4 md:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div>
-              <h3 className="text-lg font-semibold mb-4">Navigation</h3>
+              <div className="flex items-center gap-2 font-semibold mb-4">
+                <Mail className="h-5 w-5 text-primary" />
+                <span>Inbox Transaction Viewer</span>
+              </div>
+              <p className="text-sm text-muted-foreground">© 2024 inboxtransactionviewer. All rights reserved.</p>
+            </div>
+            <div>
+              <h3 className="font-medium mb-4">Navigation</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/" className="text-muted-foreground hover:text-foreground">
+                  <Link href="/" className="text-sm text-muted-foreground hover:text-primary">
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://chromewebstore.google.com/detail/inboxtransactionviewer/mailfnnagpmjbhpajaccjnhecaccceak?hl=en&authuser=0" className="text-muted-foreground hover:text-foreground">
+                  <Link href="https://chromewebstore.google.com/detail/inboxtransactionviewer/mailfnnagpmjbhpajaccjnhecaccceak?hl=en&authuser=0" className="text-sm text-muted-foreground hover:text-primary">
                     Download
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#instructions" className="text-muted-foreground hover:text-foreground">
+                  <Link href="/#instructions" className="text-sm text-muted-foreground hover:text-primary">
                     Instructions
                   </Link>
                 </li>
                 <li>
-                  <Link href="/blog" className="text-muted-foreground hover:text-foreground">
+                  <Link href="/blog" className="text-sm text-muted-foreground hover:text-primary">
                     Blog
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-4">Legal</h3>
+              <h3 className="font-medium mb-4">Legal</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/privacy" className="text-muted-foreground hover:text-foreground">
+                  <Link href="/privacy" className="text-sm text-muted-foreground hover:text-primary">
                     Privacy
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-muted-foreground hover:text-foreground">
+                  <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
                     Terms
                   </Link>
                 </li>
               </ul>
             </div>
-            <div className="md:col-span-2">
-              <p className="text-xs text-muted-foreground mb-4">
-                Inbox Transaction Viewer is an independent extension and is not endorsed, certified. Google LLC, Stripe,
-                Inc., or any of their affiliates. "Chrome", "Gmail", and "Stripe" are registered trademarks of their
-                respective owners. Use of these names, trademarks, and brands does not imply endorsement by their
-                respective holders.
-              </p>
-              <p className="text-xs text-muted-foreground mb-4">
-                We improve our products and advertising by using Microsoft Clarity to see how you use our website. By
-                using our site, you agree that we and Microsoft can collect and use this data. Our <Link href="/privacy" className="underline hover:text-foreground">privacy statement</Link> has
-                more details.
-              </p>
-              <p className="text-xs text-muted-foreground">© 2024 inboxtransactionviewer. All rights reserved.</p>
-            </div>
+          </div>
+          <div className="border-t pt-6">
+            <p className="text-xs text-muted-foreground mb-3" style={{ fontSize: '0.75rem' }}>
+              Inbox Transaction Viewer is an independent extension and is not endorsed, certified. Google LLC, Stripe, Inc., or any of their affiliates. "Chrome", "Gmail", and "Stripe" are registered trademarks of their respective owners. Use of these names, trademarks, and brands does not imply endorsement by their respective holders.
+            </p>
+            <p className="text-xs text-muted-foreground" style={{ fontSize: '0.75rem' }}>
+              We improve our products and advertising by using Microsoft Clarity to see how you use our website. By using our site, you agree that we and Microsoft can collect and use this data. Our privacy statement has more details.
+            </p>
           </div>
         </div>
       </footer>

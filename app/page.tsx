@@ -36,8 +36,8 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <div className="flex min-h-screen flex-col">
-        <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-          <div className="container flex h-16 items-center justify-between max-w-6xl mx-auto px-4">
+        <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+          <div className="container flex h-16 items-center justify-between max-w-7xl mx-auto px-4 md:px-6">
             <div className="flex items-center gap-2 font-semibold">
               <Mail className="h-5 w-5 text-primary" />
               <span>Inbox Transaction Viewer</span>
@@ -76,7 +76,7 @@ export default function Home() {
         <main className="flex-1">
           {/* Hero Section */}
           <section className="py-20 md:py-28 bg-gradient-to-b from-blue-50 to-white w-full">
-            <div className="container px-4 md:px-6 max-w-6xl mx-auto">
+            <div className="container px-4 md:px-6 max-w-7xl mx-auto">
               <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
                 <div className="flex flex-col justify-center space-y-4">
                   <div className="space-y-2">
@@ -95,7 +95,7 @@ export default function Home() {
                       <Link href="#welcome">Learn More</Link>
                     </Button>
                   </div>
-                  <p className="text-xs text-muted-foreground">
+                  <p className="text-xs text-muted-foreground" style={{ fontSize: '0.75rem' }}>
                     * Independently developed and not affiliated with or endorsed by Stripe©, Inc. Uses official Stripe
                     API&apos;s.
                   </p>
@@ -116,7 +116,7 @@ export default function Home() {
 
           {/* Welcome Section */}
           <section id="welcome" className="py-12 md:py-16 bg-background w-full">
-            <div className="container px-4 md:px-6 text-center max-w-6xl mx-auto">
+            <div className="container px-4 md:px-6 text-center max-w-7xl mx-auto">
               <h2 className="text-3xl font-bold tracking-tighter mb-4">Welcome to Inbox Transaction Viewer</h2>
               <p className="text-muted-foreground md:text-lg max-w-3xl mx-auto">
                 Streamline your Gmail with Inbox Transaction Viewer, a Chrome extension that integrates Stripe data for
@@ -136,7 +136,7 @@ export default function Home() {
 
           {/* Features Section */}
           <section className="py-12 md:py-16 bg-gray-50 w-full">
-            <div className="container px-4 md:px-6 max-w-6xl mx-auto">
+            <div className="container px-4 md:px-6 max-w-7xl mx-auto">
               <div className="text-center mb-8">
                 <h2 className="text-3xl font-bold tracking-tighter mb-4">Key Features</h2>
                 <p className="text-muted-foreground md:text-lg max-w-3xl mx-auto">
@@ -234,7 +234,7 @@ export default function Home() {
 
           {/* Info Panel Section */}
           <section className="py-12 md:py-16 bg-white w-full">
-            <div className="container px-4 md:px-6 max-w-6xl mx-auto">
+            <div className="container px-4 md:px-6 max-w-7xl mx-auto">
               <div className="grid gap-8 lg:grid-cols-2 items-center">
                 <div>
                   <h2 className="text-3xl font-bold tracking-tighter mb-4">Info Panel</h2>
@@ -291,7 +291,7 @@ export default function Home() {
 
           {/* Get Started Section */}
           <section id="download" className="py-12 md:py-16 bg-blue-50 w-full scroll-mt-20">
-            <div className="container px-4 md:px-6 text-center max-w-6xl mx-auto">
+            <div className="container px-4 md:px-6 text-center max-w-7xl mx-auto">
               <h2 className="text-3xl font-bold tracking-tighter mb-4">Get started</h2>
               <div className="max-w-md mx-auto">
                 <Button size="lg" className="w-full mb-4" asChild>
@@ -305,7 +305,7 @@ export default function Home() {
 
           {/* Instructions Section */}
           <section id="instructions" className="py-12 md:py-16 bg-gray-100 w-full scroll-mt-20">
-            <div className="container px-4 md:px-6 max-w-6xl mx-auto">
+            <div className="container px-4 md:px-6 max-w-7xl mx-auto">
               <div className="text-center">
                 <h2 className="text-3xl font-bold tracking-tighter mb-8 text-center">Instructions</h2>
                 <div className="max-w-3xl mx-auto space-y-6">
@@ -370,7 +370,7 @@ export default function Home() {
 
           {/* FAQ Section */}
           <section id="faq" className="py-12 md:py-16 bg-gray-50 w-full scroll-mt-20">
-            <div className="container px-4 md:px-6 max-w-6xl mx-auto">
+            <div className="container px-4 md:px-6 max-w-7xl mx-auto">
               <h2 className="text-3xl font-bold tracking-tighter mb-8 text-center">Frequently Asked Questions</h2>
               <div className="max-w-3xl mx-auto">
                 <Accordion type="single" collapsible className="w-full">
@@ -423,12 +423,12 @@ export default function Home() {
 
           {/* Contact Section */}
           <section id="contact" className="py-12 md:py-16 bg-white w-full scroll-mt-20">
-            <div className="container px-4 md:px-6 max-w-6xl mx-auto">
+            <div className="container px-4 md:px-6 max-w-7xl mx-auto">
               <h2 className="text-3xl font-bold tracking-tighter mb-8 text-center">Contact</h2>
               <p className="text-center text-muted-foreground mb-8 max-w-3xl mx-auto">
                 Provide feedback, ask questions, or report bugs.
               </p>
-              <div className="max-w-md mx-auto">
+              <div className="flex justify-center">
                 <Button 
                   size="lg" 
                   className="px-8" 
@@ -445,19 +445,14 @@ export default function Home() {
         </main>
 
         <footer className="border-t py-12 md:py-16 bg-gray-100 w-full">
-          <div className="container max-w-6xl mx-auto px-4 md:px-6">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-              <div className="space-y-4">
-                <div className="flex items-center gap-2 font-semibold">
+          <div className="container max-w-7xl mx-auto px-4 md:px-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+              <div>
+                <div className="flex items-center gap-2 font-semibold mb-4">
                   <Mail className="h-5 w-5 text-primary" />
                   <span>Inbox Transaction Viewer</span>
                 </div>
-                <p className="text-sm text-muted-foreground">
-                  Inbox Transaction Viewer is an independent extension and is not endorsed, certified. Google LLC, Stripe, Inc., or any of their affiliates. "Chrome", "Gmail", and "Stripe" are registered trademarks of their respective owners. Use of these names, trademarks, and brands does not imply endorsement by their respective holders.
-                </p>
-                <p className="text-xs text-muted-foreground">
-                  We improve our products and advertising by using Microsoft Clarity to see how you use our website. By using our site, you agree that we and Microsoft can collect and use this data. Our privacy statement has more details.
-                </p>
+                <p className="text-sm text-muted-foreground">© 2024 inboxtransactionviewer. All rights reserved.</p>
               </div>
               <div>
                 <h3 className="font-medium mb-4">Navigation</h3>
@@ -499,9 +494,14 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <div className="space-y-4">
-                <p className="text-sm text-muted-foreground">© 2024 inboxtransactionviewer. All rights reserved.</p>
-              </div>
+            </div>
+            <div className="border-t pt-6">
+              <p className="text-xs text-muted-foreground mb-3" style={{ fontSize: '0.75rem' }}>
+                Inbox Transaction Viewer is an independent extension and is not endorsed, certified. Google LLC, Stripe, Inc., or any of their affiliates. "Chrome", "Gmail", and "Stripe" are registered trademarks of their respective owners. Use of these names, trademarks, and brands does not imply endorsement by their respective holders.
+              </p>
+              <p className="text-xs text-muted-foreground" style={{ fontSize: '0.75rem' }}>
+                We improve our products and advertising by using Microsoft Clarity to see how you use our website. By using our site, you agree that we and Microsoft can collect and use this data. Our privacy statement has more details.
+              </p>
             </div>
           </div>
         </footer>
